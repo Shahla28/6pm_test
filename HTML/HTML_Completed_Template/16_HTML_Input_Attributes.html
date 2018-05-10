@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input attributes</title>
+    <style>
+    	div{
+    		background-color: purple;
+    		color: white;
+    		padding: 10px;
+    		margin: 5px;
+    		width:400px;
+    		border-radius: 50px;
+    	}
+    </style>
+</head>
+<body>
+    <h2>HTML form input attributes</h2>
+    <!-- input attributes value , readonly , size , rows , cols-->
+    <!--value-->
+    <div>
+    	<form>
+    		<label>User Name</label>
+    		<input type="text" value="Some Text">
+    	</form>
+    </div>
+
+    <!--readonly-->
+    <div>
+    	<form>
+    		<label>User Name</label>
+    		<input type="text" value="Some Text" readonly="true">
+    	</form>
+    </div>
+
+    <!--disabled-->
+    <div>
+    	<form>
+    		<label>User Name</label>
+    		<input type="text" value="Some Text" disabled="true">
+    	</form>
+    </div>
+
+    <!--size-->
+    <div>
+    	<form>
+    		<label>User Name</label>
+    		<input type="text" size="30">
+    	</form>
+    </div>
+
+    <!--rows,cols-->
+    <div>
+    	<form>
+    		<label>Your Message</label>
+    		<textarea rows="5" cols="30"></textarea>
+    	</form>
+    </div>
+    <!-- HTML 5 Form Attributes required ,
+    no-validate , autofocus , pattern , placeholder -->
+    <h2>HTML 5 input attributes</h2>
+    
+    <!--required-->
+    <div>
+    	<form>
+    		<label>User Name<span style="color: red">*</span></label>
+    		<input type="text" required>
+    		<input type="submit" value="Submit">
+    	</form>
+    </div>
+
+    <!--novalidate-->
+    <div>
+    	<form novalidate>
+    		<label>Enter your email</label>
+    		<input type="email">
+    		<input type="submit" value="Submit">
+    	</form>
+    </div>
+
+    <!--Placeholder-->
+    <div>
+    	<form>
+    		
+    		<input type="text" placeholder="Enter user name" >
+    	</form>
+    </div>
+
+    <!--pattern-->
+    <div>
+    	<form>
+    		
+    		<input type="text" placeholder="Enter user name">
+    		<input type="submit" value="Submit" name="">
+    	</form>
+    </div>
+
+</body>
+</html>
